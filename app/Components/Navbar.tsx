@@ -8,7 +8,7 @@ export const Navbar = () => {
             </div>
             <div className="z-10 flex gap-3 items-center font-bold text-2xl">
                 <Logo/>
-                <span>{'<Dev/>'}</span>
+                <span className="text-white">{'<Dev/>'}</span>
             </div>
             <div className="z-10"></div>
         </section>

@@ -9,7 +9,7 @@ const GradientText = ({ text, colors, className }: Props) => {
     <span
     className={className}
       style={{
-        background: `linear-gradient(55deg, ${colors.join(",")})`,
+        backgroundImage: `linear-gradient(55deg, ${colors.join(",")})`,
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}

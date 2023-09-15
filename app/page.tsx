@@ -11,21 +11,21 @@ export default function Home() {
       <section className="h-screen relative">
         <div
           className="
-        absolute top-28 md:right-0 z-20 bg-white p-2 rounded-md flex gap-3 items-center
+        absolute bottom-7 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
         "
         >
           <span className="h-4 w-4 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1 animate-ping "></span>
           <span className="h-1 w-1 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1"></span>
-          <div className=" w-32 md:w-14">
+          <div className=" md:w-14 rounded-full overflow-hidden">
             <Image
-              className=" w-14 h-14 md:h-14 md:w-14 rounded-full object-cover "
+              className=" w-14 h-14 md:h-14 md:w-14 object-cover "
               src={"/images/camilo.JPG"}
               width={500}
               height={500}
               alt="Picture of the author"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:text-left gap-2 md:gap-0 items-center md:items-start text-center">
             <h1 className="font-bold text-sm text-gray-800 flex gap-1 items-center">
               {"@CamiloCarreno"}
               <span className="w-4">
@@ -46,10 +46,10 @@ export default function Home() {
           </div>
         </div>
         <Background />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center w-96 md:w-full">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/3 text-center w-96 md:w-full">
           <h1 className="text-white flex flex-col gap-2 md:gap-5 text-7xl font-bold md:text-8xl md:flex-row md:justify-center mb-6">
             <span>Camilo</span>
-            <GradientText text="Carreño." colors={["#FF6101", "#FD7F2B"]} />
+            <GradientText text="Carreño." colors={["oklch(67.3% 0.266 25.039656026515278)", "oklch(85.82% 0.201 91.19)"]} />
           </h1>
 
           <p className="text-center mt-3 text-gray-500 text-sm md:text-lg">

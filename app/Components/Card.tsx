@@ -15,7 +15,7 @@ const Card = (props: Props) => {
       </p>
 
       <div className={`font-light flex ${props.technologies&&props.technologies?.length>=3?" flex-col " : " flex-row xl:flex-row "} gap-2`}>
-        <span>{"Technologies:"}</span>
+        <span className="text-white">{"Technologies:"}</span>
         <div className="flex flex-row gap-1">
           {props.technologies?.map((technology,index) => (
               <span key={index} className={`py-1 px-4 bg-gray-600 rounded-full text-xs`}>{technology}</span>

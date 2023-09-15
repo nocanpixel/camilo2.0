@@ -11,7 +11,7 @@ const One = () => {
         <span style={{ WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundImage: 'linear-gradient(90deg, oklch(59.59% 0.24 255.09156059071347), oklch(81.58% 0.189 190.74037768509325))' }}>Projects</span>
       </h1>
       <h2 className="flex flex-col md:flex-row gap-4 items-center justify-center pt-4">
-        <span className="text-3xl">My recent work</span>
+        <span className="text-3xl text-white">My recent work</span>
         <span className="text-lg text-center md:text-start text-gray-400">
           {"Here are a few design projects I've worked on recently."}
         </span>

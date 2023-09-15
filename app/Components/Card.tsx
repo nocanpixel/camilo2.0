@@ -9,7 +9,7 @@ const Card = (props: Props) => {
 
   return (
     <div className={`border relative border-gray-600 cursor-pointer p-6 rounded-xl md:max-w-md hover:border-gray-500 hover:bg-zinc-900 hover:bg-opacity-60 flex flex-col gap-3 justify-between`}>
-      <span className="text-2xl">{props.title}</span>
+      <span className="text-2xl text-white">{props.title}</span>
       <p className="text-sm text-gray-400 mt-2">
         {props.description}
       </p>

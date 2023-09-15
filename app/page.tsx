@@ -56,7 +56,7 @@ export default function Home() {
           <p className="text-center mt-3 text-gray-500 text-sm md:text-lg">
             {"Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success."}
           </p>
-          <div className="pt-10 text-2xl">
+          <div className="pt-10 text-2xl text-white">
             <span className="text-sm font-thin">{"Let's have a "}</span>
             <span className="text-sm font-bold">{"CHAT"}</span>
             <span>{" "}☕️</span>

@@ -36,7 +36,7 @@ export default function Home() {
                 {"• 18:03"}
               </span>
             </h1>
-            <p className="text-black text-xs w-full px-10 md:px-0 md:w-96">
+            <p className="text-black text-xs w-full px-2 md:px-0 md:w-96">
               {
                 "Just realized coding is like baking a cake: a little syntax, a pinch of logic, and a lot of 'trial and error' frosting! 🍰💻 "
               }

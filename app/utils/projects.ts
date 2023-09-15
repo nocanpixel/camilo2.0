@@ -23,7 +23,7 @@ export const projects = [
     {
         id:4,
         title: "my-beautiful-calendar",
-        url: "url4",
+        url: "https://www.npmjs.com/package/my-beautiful-calendar",
         description: "npm calendar – Streamlined date display for your web projects, making date selection effortlessly cool 🗓️😎",
         technologies: ['vanilla JS','vite']
     }

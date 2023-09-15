@@ -4,6 +4,7 @@ import { Background } from "./Components/Background";
 import GradientText from "./Components/GradientText";
 import One from "./Components/sections/One";
 import { Instagram, LinkedIn, Mail, TwitterBadge } from "./Icon/Icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <section className="h-screen relative">
         <div
           className="
-        absolute bottom-7 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
+        absolute bottom-0 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
         "
         >
           <span className="h-4 w-4 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1 animate-ping "></span>
@@ -35,7 +36,7 @@ export default function Home() {
                 {"• 18:03"}
               </span>
             </h1>
-            <p className="text-black text-xs w-full md:w-96">
+            <p className="text-black text-xs w-full px-10 md:px-0 md:w-96">
               {
                 "Just realized coding is like baking a cake: a little syntax, a pinch of logic, and a lot of 'trial and error' frosting! 🍰💻 "
               }
@@ -53,25 +54,33 @@ export default function Home() {
           </h1>
 
           <p className="text-center mt-3 text-gray-500 text-sm md:text-lg">
-            Experienced developer with a passion for solving complex problems
-            through elegant code. Proficient in multiple languages, frameworks,
-            and tools. Committed to delivering quality and innovative solutions
-            for business success.
+            {"Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success."}
           </p>
-          <div className="pt-10 flex justify-center items-center gap-3">
+          <div className="pt-10 text-2xl">
+            <span className="text-sm font-thin">{"Let's have a "}</span>
+            <span className="text-sm font-bold">{"CHAT"}</span>
+            <span>{" "}☕️</span>
+          </div>
+          <div className="mt-4 flex justify-center items-center gap-3">
+            <Link href={"https://www.instagram.com/juanca_milo14/?theme=dark"} target="_blank">
             <div className="w-5">
               <Instagram />
             </div>
+            </Link>
+            <Link href={"https://www.linkedin.com/in/juan-camilo-carre%C3%B1o-bele%C3%B1o-290a37177/"}>
             <div className="w-5">
               <LinkedIn />
             </div>
+            </Link>
+            <Link href={"mailto:juancamilocb96@gmail.com"}>
             <div className="w-5">
               <Mail />
             </div>
+            </Link>
           </div>
         </div>
       </section>
-      <section>
+      <section className="py-10">
         <One />
       </section>
     </main>

@@ -25,6 +25,7 @@ export default function Home() {
               width={500}
               height={500}
               alt="Picture of the author"
+              priority
             />
           </div>
           <div className="flex flex-col md:text-left gap-2 md:gap-0 items-center md:items-start text-center">

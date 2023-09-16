@@ -30,6 +30,7 @@ const One = () => {
         {projects.map((project) => {
           return (
             <Card
+              key={project.id}
               url={project.url}
               title={project.title}
               description={project.description}

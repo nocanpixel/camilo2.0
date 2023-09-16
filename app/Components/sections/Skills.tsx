@@ -20,7 +20,7 @@ export const Skills = () => {
 
           return (
             <StyledCard key={skill.id} color={skill.color} text={skill.text}>
-              <span className="font-semibold">
+              <span className="font-semibold text-white">
                 {truncatedName.toLocaleUpperCase()}
               </span>
             </StyledCard>

@@ -5,6 +5,7 @@ import GradientText from "./Components/GradientText";
 import One from "./Components/sections/One";
 import { Instagram, LinkedIn, Mail, TwitterBadge } from "./Icon/Icons";
 import Link from "next/link";
+import { Skills } from "./Components/sections/Skills";
 
 export default function Home() {
   return (
@@ -56,12 +57,7 @@ export default function Home() {
           <p className="text-center mt-3 text-gray-500 text-sm md:text-lg">
             {"Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success."}
           </p>
-          <div className="pt-10 text-2xl text-white">
-            <span className="text-sm font-thin">{"Let's have a "}</span>
-            <span className="text-sm font-bold">{"CHAT"}</span>
-            <span>{" "}☕️</span>
-          </div>
-          <div className="mt-4 flex justify-center items-center gap-3">
+          <div className="mt-10 flex justify-center items-center gap-3">
             <Link href={"https://www.instagram.com/juanca_milo14/?theme=dark"} target="_blank">
             <div className="w-5">
               <Instagram />
@@ -78,7 +74,14 @@ export default function Home() {
             </div>
             </Link>
           </div>
+
+          <div className="pt-10">
+              <span className="text-sm text-gray-500 font-light">{`Camilo Carreño 2023 `}&copy;</span>
+          </div>
         </div>
+      </section>
+      <section>
+        <Skills/>
       </section>
       <section className="py-10">
         <One />

@@ -4,7 +4,7 @@ export const projects = [
         title: "Platform",
         url: "https://nocanpixel.github.io/venturitchall/",
         description: "A fun task involving a coding-based replication of a hand-drawn picture for a company.",
-        technologies: ['React JS', 'CSS']
+        technologies: ['React JS', 'CSS'],
     },
     {
         id:2,

@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import { Background } from "./Components/Background";
-import GradientText from "./Components/GradientText";
-import One from "./Components/sections/One";
+import { Background } from "./components/Background";
+import GradientText from "./components/GradientText";
+import One from "./components/sections/One";
 import { Instagram, LinkedIn, Mail, TwitterBadge } from "./Icon/Icons";
 import Link from "next/link";
-import { Skills } from "./Components/sections/Skills";
+import { Skills } from "./components/sections/Skills";
 
 export default function Home() {
   return (

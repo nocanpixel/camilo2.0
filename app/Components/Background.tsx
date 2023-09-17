@@ -1,21 +1,10 @@
 "use client";
 import {
-  Center,
-  Environment,
-  Lightformer,
-  MeshTransmissionMaterial,
   OrbitControls,
   Stars,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import {
-  Bloom,
-  BrightnessContrast,
-  EffectComposer,
-  HueSaturation,
-  LUT,
-} from "@react-three/postprocessing";
-import { useRef } from "react";
+
 export const Background = () => {
 
   return (

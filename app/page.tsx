@@ -2,10 +2,10 @@
 import Image from "next/image";
 import { Instagram, LinkedIn, Mail, TwitterBadge } from "./Icon/Icons";
 import Link from "next/link";
-import { Skills } from "./components/sections/Skills";
-import { Background } from "./components/Background";
-import GradientText from "./components/GradientText";
-import One from "./components/sections/One";
+import { Skills } from "./Components/sections/Skills";
+import { Background } from "./Components/Background";
+import GradientText from "./Components/GradientText";
+import One from "./Components/sections/One";
 
 export default function Home() {
   return (

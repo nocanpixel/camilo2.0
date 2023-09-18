@@ -23,7 +23,7 @@ export const Skills = () => {
             <Popover key={skill.id} title={skill.name} experience={skill.experience} id={skill.id} logo={skill.logo}>
               <StyledCard >
                 <span className="font-semibold text-white">
-                  {truncatedName.toLocaleUpperCase()}
+                  {truncatedName}
                 </span>
               </StyledCard>
             </Popover>

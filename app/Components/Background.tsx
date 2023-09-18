@@ -10,7 +10,7 @@ export const Background = () => {
   return (
     <Canvas shadows camera={{ position: [-20, -1, 2], fov: 10 }}>
       <color attach="background" args={["#000000"]} />
-      <Stars saturation={1} count={2500} speed={0.5} radius={4} />
+      <Stars saturation={1} count={2500} speed={0.5} radius={5} />
       <OrbitControls
         autoRotate
         autoRotateSpeed={0.2}

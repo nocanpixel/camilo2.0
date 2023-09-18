@@ -10,6 +10,9 @@ import One from "./Components/sections/One";
 export default function Home() {
   return (
     <main>
+      <div className="absolute left-0 h-screen w-full">
+      <Background />
+      </div>
       <section className="h-screen relative">
         <div
           className="
@@ -48,7 +51,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <Background />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/3 text-center w-96 md:w-full">
           <h1 className="text-white flex flex-col gap-2 md:gap-5 text-7xl font-bold md:text-8xl md:flex-row md:justify-center mb-6">
             <span>Camilo</span>

@@ -20,7 +20,7 @@ const One = () => {
       <h2 className="flex flex-col md:flex-row gap-4 items-center justify-center pt-4">
         <span className="text-3xl text-white">My recent work</span>
         <span className="text-lg text-center md:text-start text-gray-400">
-          {"Here are a few design projects I've worked on recently."}
+          {"Here are a few design projects I've worked on."}
         </span>
       </h2>
       <div

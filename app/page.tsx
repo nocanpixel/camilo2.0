@@ -16,7 +16,7 @@ export default function Home() {
       <section className="h-screen relative">
         <div
           className="
-        absolute bottom-0 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
+        absolute bottom-0 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 py-7 md:py-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
         "
         >
           <span className="h-4 w-4 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1 animate-ping "></span>
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="my-16">
         <Skills/>
       </section>
       <section className="py-10">

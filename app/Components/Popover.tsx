@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export const Popover: React.FC<PropsPopover> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsloading] = useState(true);
 
   const { refs, floatingStyles, context } = useFloating({
     open: isOpen,
@@ -31,7 +32,7 @@ export const Popover: React.FC<PropsPopover> = (props) => {
       })}
       {isOpen && (
         <StyledPopover
-          className="floating"
+          className={`${isLoading? 'blur-sm' : ''}`}
           ref={refs.setFloating}
           style={floatingStyles}
           {...getFloatingProps()}
@@ -44,6 +45,7 @@ export const Popover: React.FC<PropsPopover> = (props) => {
               height={500}
               width={500}
               alt={"javascript"}
+              onLoadingComplete={()=> setIsloading(false)}
             />
           </div>
           <span className="text-2xl font-bold">{props.title}</span>

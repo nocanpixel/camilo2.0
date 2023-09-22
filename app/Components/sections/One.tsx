@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import { projects } from "@/app/utils/projects";
+import { Project } from "@/app/types/interfaces";
 
 const One = () => {
 

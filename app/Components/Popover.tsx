@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { PropsPopover } from "../types/interfaces";
-import { autoUpdate, flip, offset, shift, useFloating, useHover, useInteractions } from "@floating-ui/react";
+import {
+  autoUpdate,
+  flip,
+  limitShift,
+  offset,
+  shift,
+  useFloating,
+  useHover,
+  useInteractions,
+} from "@floating-ui/react";
 import { StyledPopover } from "../styles/components/Popover";
 import Image from "next/image";
 
@@ -13,10 +22,10 @@ export const Popover: React.FC<PropsPopover> = (props) => {
     onOpenChange: setIsOpen,
     middleware: [
       offset(10),
-      flip({ fallbackAxisSideDirection: "end"}),
-      shift()
+      flip({ fallbackAxisSideDirection: "end" }),
+      shift({padding:23}),
     ],
-    whileElementsMounted: autoUpdate
+    whileElementsMounted: autoUpdate,
   });
 
   const hover = useHover(context);
@@ -32,7 +41,7 @@ export const Popover: React.FC<PropsPopover> = (props) => {
       })}
       {isOpen && (
         <StyledPopover
-          className={`${isLoading? 'blur-sm' : ''}`}
+          className={`${isLoading ? "blur-sm" : "ring ring-black"}`}
           ref={refs.setFloating}
           style={floatingStyles}
           {...getFloatingProps()}
@@ -45,7 +54,7 @@ export const Popover: React.FC<PropsPopover> = (props) => {
               height={500}
               width={500}
               alt={"javascript"}
-              onLoadingComplete={()=> setIsloading(false)}
+              onLoadingComplete={() => setIsloading(false)}
             />
           </div>
           <span className="text-2xl font-bold">{props.title}</span>

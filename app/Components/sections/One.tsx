@@ -3,6 +3,15 @@ import Card from "../Card";
 import { projects } from "@/app/utils/projects";
 
 const One = () => {
+
+  const numGroups = 3;
+  const groups: Project[][] = Array.from({ length: numGroups }, () => []);
+  
+  projects.forEach((project, index) => {
+    const groupIndex = index % numGroups;
+    groups[groupIndex].push(project);
+  });
+
   return (
     <div>
       <h1 className="text-4xl font-bold text-center pt-8">
@@ -23,18 +32,20 @@ const One = () => {
           {"Here are a few design projects I've worked on."}
         </span>
       </h2>
-      <div
-        className={`pt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2`}
-      >
-        {projects.map((project) => {
+      <div className={`pt-10 grid grid-cols-1 md:grid-cols-3 gap-4`}>
+        {groups.map((element, index) => {
           return (
-            <Card
-              key={project.id}
-              url={project.url}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-            />
+            <div key={index} className="grid gap-4">
+              {element.map((project) => (
+                <Card
+                  key={project.id}
+                  url={project.url}
+                  title={project.title}
+                  description={project.description}
+                  technologies={project.technologies}
+                />
+              ))}
+            </div>
           );
         })}
       </div>

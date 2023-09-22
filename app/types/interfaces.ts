@@ -9,3 +9,11 @@ export interface PropsPopover {
     experience:string;
     id?:number;
 }
+
+export type Project = {
+    id: number;
+    title: string;
+    url: string;
+    description: string;
+    technologies: string[];
+  };

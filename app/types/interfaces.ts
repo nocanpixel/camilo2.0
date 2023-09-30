@@ -17,3 +17,9 @@ export type Project = {
     description: string;
     technologies: string[];
   };
+
+export type Props3D = {
+    position: any;
+    radio?: number;
+    changeColor?: number;
+}

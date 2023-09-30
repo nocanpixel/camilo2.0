@@ -48,9 +48,9 @@ export const Background = () => {
 
   return (
     <Canvas shadows camera={{ position: [-0.5, 0, -5.9] }}>
-      <Blob position={[-7, 1, 1]} radio={2}/>
+      <Blob position={[-6, 1, 1]} radio={2}/>
       <Blob position={[0, 7, 10] } radio={2} />
-      <Blob position={[7, 1, 1]} radio={2} />
+      <Blob position={[6, 1, 1]} radio={2} />
     </Canvas>
   );
 };

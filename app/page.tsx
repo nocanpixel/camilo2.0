@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
-import { Instagram, LinkedIn, Mail, TwitterBadge } from "./Icon/Icons";
+import { Instagram, LinkedIn, Mail } from "./Icon/Icons";
 import Link from "next/link";
 import { Skills } from "./Components/sections/Skills";
 import { Background } from "./Components/Background";
 import GradientText from "./Components/GradientText";
 import One from "./Components/sections/One";
+import { TweetCard } from "./Components/TweetCard";
 
 export default function Home() {
   return (
@@ -15,44 +15,8 @@ export default function Home() {
           <Background />
       </div>
       <section className="h-screen relative">
-        <div
-          className="
-        absolute bottom-0 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 py-7 md:py-2 rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
-        "
-        >
-          <span className="h-4 w-4 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1 animate-ping "></span>
-          <span className="h-1 w-1 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1"></span>
-          <div className=" md:w-14 rounded-full overflow-hidden">
-            <Image
-              className=" w-14 h-14 md:h-14 md:w-14 object-cover "
-              src={"/images/camilo.JPG"}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              priority
-            />
-          </div>
-          <div className="flex flex-col md:text-left gap-2 md:gap-0 items-center md:items-start text-center">
-            <h1 className="font-bold text-sm text-gray-800 flex gap-1 items-center">
-              {"@CamiloCarreno"}
-              <span className="w-4">
-                <TwitterBadge />
-              </span>
-              <span className="text-xs text-gray-400 font-light">
-                {"• 18:03"}
-              </span>
-            </h1>
-            <p className="text-black text-xs w-full px-2 md:px-0 md:w-96">
-              {
-                "Just realized coding is like baking a cake: a little syntax, a pinch of logic, and a lot of 'trial and error' frosting! 🍰💻 "
-              }
-              <span className="text-sky-600 font-semibold cursor-pointer">
-                {"#CodeChefLife #CodingAdventures"}
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/3 text-center w-96 md:w-full">
+        <TweetCard visible={false} />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/3 text-center w-96 md:w-full">
           <h1 className="text-white flex flex-col gap-2 md:gap-5 text-7xl font-bold md:text-8xl md:flex-row md:justify-center mb-6">
             <span>Camilo</span>
             <GradientText
@@ -100,6 +64,9 @@ export default function Home() {
             </span>
           </div>
         </div>
+      </section>
+      <section className="relative w-full h-48 my-16 sm:h-0 sm:my-0">
+      <TweetCard visible/>
       </section>
       <section className="my-16">
         <Skills />

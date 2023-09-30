@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mb-16 mt-4">
+      <section className="mt-32">
         <Skills />
       </section>
       <section className="py-10">

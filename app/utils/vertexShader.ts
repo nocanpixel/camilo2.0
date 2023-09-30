@@ -97,7 +97,7 @@ void main() {
     vec3 rotationAxis = vec3(0.0, 1.0, 0.0);
     
     // Define a constant to control the rotation speed
-    float rotationSpeed = 0.1; // Adjust this value to make it slower or faster
+    float rotationSpeed = 0.5; // Adjust this value to make it slower or faster
     
     // Define the rotation angle based on time, but slower
     float rotationAngle = u_time * rotationSpeed;

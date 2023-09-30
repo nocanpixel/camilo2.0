@@ -2,21 +2,20 @@ import Image from "next/image";
 import { TwitterBadge } from "../Icon/Icons";
 
 interface Props {
-    visible?: boolean;
+    text: string;
 }
 
-export const TweetCard = ({visible}:Props) => {
+export const TweetCard = ({text}:Props) => {
   return (
     <div
-      className={`
-      absolute bottom-0 md:bottom-auto md:top-24 md:right-0 z-20 bg-white p-2 py-7 md:py-2 rounded-md ${visible?'flex sm:hidden':'hidden sm:flex'} gap-1 md:gap-3 items-center md:flex-row flex-col justify-center
+      className={`bg-white p-2 py-7 md:py-2 shadow-md rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col w-full
       `}
     >
       <span className="h-4 w-4 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1 animate-ping "></span>
       <span className="h-1 w-1 p-2 bg-sky-400 rounded-full absolute -right-1 -top-1"></span>
-      <div className=" md:w-14 rounded-full overflow-hidden">
+      <div style={{minWidth:'70px'}}>
         <Image
-          className=" w-14 h-14 md:h-14 md:w-14 object-cover "
+          className="object-cover h-16 w-16 rounded-full shadow-md"
           src={"/images/camilo.JPG"}
           width={500}
           height={500}
@@ -32,10 +31,8 @@ export const TweetCard = ({visible}:Props) => {
           </span>
           <span className="text-xs text-gray-400 font-light">{"• 18:03"}</span>
         </h1>
-        <p className="text-black text-xs w-full px-2 md:px-0 md:w-96">
-          {
-            "Just realized coding is like baking a cake: a little syntax, a pinch of logic, and a lot of 'trial and error' frosting! 🍰💻 "
-          }
+        <p className="text-black text-xs px-2 md:px-0">
+          {text}
           <span className="text-sky-600 font-semibold cursor-pointer">
             {"#CodeChefLife #CodingAdventures"}
           </span>

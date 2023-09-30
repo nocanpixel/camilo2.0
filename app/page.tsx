@@ -6,34 +6,32 @@ import { Background } from "./Components/Background";
 import GradientText from "./Components/GradientText";
 import One from "./Components/sections/One";
 import { TweetCard } from "./Components/TweetCard";
+import { thoughts } from "./utils/thoughts";
 
 export default function Home() {
   return (
     <main>
-      <div className="absolute left-0 h-screen w-full bg-gray-900" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 15%, 0 50%)' }}>
-        <div className="w-full h-screen absolute z-10 bg-black opacity-10"></div>
-          <Background />
+      <div className="absolute left-0 h-screen w-full bg-gray-900">
+        <div className="w-full h-screen absolute z-10 backdrop-filter bg-opacity-10 backdrop-blur-md"></div>
+        <Background />
       </div>
-      <section className="h-screen relative">
-        <TweetCard visible={false} />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/3 text-center w-96 md:w-full">
-          <h1 className="text-white flex flex-col gap-2 md:gap-5 text-7xl font-bold md:text-8xl md:flex-row md:justify-center mb-6">
+      <div
+        className="absolute left-0 h-screen w-full z-20 bg-black"
+        style={{ clipPath: "polygon(0 50%, 100% 23%, 100% 100%, 0% 100%)" }}
+      ></div>
+      <section className="h-screen relative z-30">
+        <div className="absolute w-full h-screen grid md:grid-cols-2 items-center md:items-center md:justify-center md:gap-7">
+          <div>
+          <h1 className="text-white flex flex-col gap-1 text-7xl font-bold md:text-7xl mb-6 text-center md:text-left">
             <span>Camilo</span>
-            <GradientText
-              text="Carreño."
-              colors={[
-                "oklch(67.3% 0.266 25.039656026515278)",
-                "oklch(85.82% 0.201 91.19)",
-              ]}
-            />
-          </h1>
-
-          <p className="text-center mt-3 text-gray-500 text-sm md:text-lg">
+            <span>Carreño Beleño</span>
+          </h1> 
+          <p className="text-center md:text-left mt-3 text-gray-500 text-sm md:text-md">
             {
               "Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success."
             }
           </p>
-          <div className="mt-10 flex justify-center items-center gap-3">
+          <div className="mt-5 flex items-center justify-center md:justify-start gap-3">
             <Link
               href={"https://www.instagram.com/juanca_milo14/?theme=dark"}
               target="_blank"
@@ -57,18 +55,37 @@ export default function Home() {
               </div>
             </Link>
           </div>
-
-          <div className="pt-10">
-            <span className="text-sm text-gray-500 font-light">
-              {`Camilo Carreño 2023 `}&copy;
-            </span>
+          </div>
+          <div
+            className="relative bg-gray-100 p-2 rounded-md w-2/2 hidden md:block"
+            style={{ minHeight: "40%", maxHeight: "100%" }}
+          >
+            <div className="py-5">
+              <span className="text-gray-800 font-semibold text-2xl pl-2">
+                {"@Thoughts •"}
+              </span>
+            </div>
+            <div className="overflow-auto h-44 md:h-56">
+            {thoughts?.map(item => (
+              <div key={item.id} className="py-1" >
+                <TweetCard text={item.text} />
+              </div>
+            ))}
+            </div>
+            <div className="w-full h-10 mt-10">
+              <div className=" w-full flex items-center h-10 justify-center">
+                <span className="text-sm text-gray-400 font-light">
+                  {`Camilo Carreño 2023 `}&copy;
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className=" h-32 absolute bottom-0 md:hidden">
+            <TweetCard text={thoughts[0].text} />
           </div>
         </div>
       </section>
-      <section className="relative w-full h-48 my-16 sm:h-0 sm:my-0">
-      <TweetCard visible/>
-      </section>
-      <section className="my-16">
+      <section className="mb-16 mt-4">
         <Skills />
       </section>
       <section className="py-10">

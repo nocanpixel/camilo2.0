@@ -62,7 +62,7 @@ export default function Home() {
           >
             <div className="py-5">
               <span className="text-gray-800 font-semibold text-2xl pl-2">
-                {"@Thoughts •"}
+                {"#Thoughts •"}
               </span>
             </div>
             <div className="overflow-auto h-44 md:h-56">

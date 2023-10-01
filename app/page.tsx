@@ -57,18 +57,18 @@ export default function Home() {
           </div>
           </div>
           <div
-            className="relative bg-gray-100 p-2 rounded-md w-2/2 hidden md:block"
-            style={{ minHeight: "40%", maxHeight: "100%" }}
+            className="relative bg-gray-100 p-6 rounded-md w-2/2 hidden md:block"
+            style={{ minHeight: "40%" }}
           >
             <div className="py-5">
               <span className="text-gray-800 font-semibold text-2xl pl-2">
                 {"#Thoughts •"}
               </span>
             </div>
-            <div className="overflow-auto h-44 md:h-56">
+            <div className="overflow-auto h-44 md:h-46">
             {thoughts?.map(item => (
               <div key={item.id} className="py-1" >
-                <TweetCard text={item.text} />
+                <TweetCard text={item.text} tags={item.tags} time={item.time} />
               </div>
             ))}
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" h-32 absolute bottom-0 md:hidden">
-            <TweetCard text={thoughts[0].text} />
+            <TweetCard text={thoughts[0].text} tags={thoughts[0].tags} time={thoughts[0].time} />
           </div>
         </div>
       </section>

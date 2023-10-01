@@ -3,9 +3,11 @@ import { TwitterBadge } from "../Icon/Icons";
 
 interface Props {
     text: string;
+    tags: string;
+    time: string;
 }
 
-export const TweetCard = ({text}:Props) => {
+export const TweetCard = ({text,tags,time}:Props) => {
   return (
     <div
       className={`bg-white p-2 py-7 md:py-2 shadow-md rounded-md flex gap-1 md:gap-3 items-center md:flex-row flex-col w-full
@@ -29,12 +31,12 @@ export const TweetCard = ({text}:Props) => {
           <span className="w-4">
             <TwitterBadge />
           </span>
-          <span className="text-xs text-gray-400 font-light">{"• 18:03"}</span>
+          <span className="text-xs text-gray-400 font-light">{`• ${time}`}</span>
         </h1>
         <p className="text-black text-xs px-2 md:px-0">
           {text}
           <span className="text-sky-600 font-semibold cursor-pointer">
-            {"#CodeChefLife #CodingAdventures"}
+            {tags}
           </span>
         </p>
       </div>

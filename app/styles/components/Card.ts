@@ -17,18 +17,20 @@ export const StyledCard = styled.div<StyledCardProps>`
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 7px 0px 7px 0px;
   border-radius: 0.4rem;
   position: relative;
   background-color: black;
   cursor: pointer;
+  height: 7rem;
 
   &:hover {
       /* Custom styles for ::before and ::after on hover */
   &::before {
     content: "";
-    width: 105%;
-    height: 112%;
+    width: 103%;
+    height: 107%;
     border-radius: 0.4rem;
     background-image: linear-gradient(
       var(--rotate),
@@ -38,20 +40,20 @@ export const StyledCard = styled.div<StyledCardProps>`
     );
     position: absolute;
     z-index: -1;
-    top: -6%;
-    left: -2.5%;
+    top: -3%;
+    left: -1.5%;
     animation: spin 2.5s linear infinite;
   }
 
   &::after {
     position: absolute;
     content: "";
-    top:  -3px;
-    left: -18px;
+    top:  -11%;
+    left: -13%;
     right: 0;
     z-index: -1;
-    height: 115%;
-    width: 127%;
+    height: 140%;
+    width: 125%;
     margin: 0 auto;
     transform: scale(0.8);
     filter: blur(calc(106px / 6));

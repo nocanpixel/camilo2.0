@@ -5,7 +5,8 @@ export const skills = [
       color: "#F0DB4F",
       text: getTextColor("#F0DB4F"), // Yellow background, black text
       logo: "https://abrudz.github.io/logos/JS.svg",
-      experience: "6"
+      experience: "6",
+      class: "md:row-span-3"
     },
     {
       id: 2,
@@ -13,7 +14,8 @@ export const skills = [
       color: "#61DBFB",
       text: getTextColor("#61DBFB"), // Red background, black text
       logo: "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png",
-      experience: "4"
+      experience: "4",
+      class: "md:row-span-3 md:col-start-4 md:row-start-3  "
     },
     {
       id: 3,
@@ -21,7 +23,8 @@ export const skills = [
       color: "#3C873A",
       text: getTextColor("#3C873A"), // Green background, white text
       logo: "https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png",
-      experience: "2"
+      experience: "2",
+      class: "md:row-span-3 md:col-start-5 md:row-start-1"
     },
     {
       id: 4,
@@ -29,7 +32,8 @@ export const skills = [
       color: "#F06529",
       text: getTextColor("#F06529"), // Orange background, white text
       logo: "https://cdn.freebiesupply.com/logos/large/2x/html5-logo-png-transparent.png",
-      experience: "6"
+      experience: "6",
+      class: "md:row-span-3 md:col-start-3 md:row-start-1 "
     },
     {
       id: 5,
@@ -37,7 +41,8 @@ export const skills = [
       color: "#3C99DC",
       text: getTextColor("#3C99DC"), // Red background, white text
       logo: "https://cdn.freebiesupply.com/logos/large/2x/css-3-logo-png-transparent.png",
-      experience: "6"
+      experience: "6",
+      class: "md:row-span-3 md:col-start-2 md:row-start-3 "
     },
     {
       id: 6,
@@ -45,7 +50,8 @@ export const skills = [
       color: "#F3FA8C",
       text: getTextColor("#F3FA8C"), // Yellow background, black text
       logo: "https://vitejs.dev/logo-with-shadow.png",
-      experience: "1"
+      experience: "1",
+      class: "md:row-span-3 md:col-start-5 md:row-start-4 "
     },
     {
       id: 7,
@@ -53,7 +59,8 @@ export const skills = [
       color: "#4D326B",
       text: getTextColor("#4D326B"), // Pink background, black text
       logo: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
-      experience: "2"
+      experience: "2",
+      class: "md:row-span-3 md:col-start-3 md:row-start-4 "
     },
     {
       id: 9,
@@ -61,7 +68,8 @@ export const skills = [
       color: "#EFB9E4",
       text: getTextColor("#EFB9E4"), // Purple background, white text
       logo: "https://graphql.org/img/logo.svg",
-      experience: "1"
+      experience: "1",
+      class: "md:row-span-3 md:col-start-1 md:row-start-4"
     },
   ];
   

@@ -20,7 +20,7 @@ export default function Home() {
         style={{ clipPath: "polygon(0 50%, 100% 23%, 100% 100%, 0% 100%)" }}
       ></div>
       <section className="h-screen relative z-30">
-        <div className="absolute w-full h-screen grid md:grid-cols-2 items-center md:items-center md:justify-center md:gap-7">
+        <div className="absolute w-full h-screen grid md:grid-cols-2 items-center md:items-center md:justify-center md:gap-4">
           <div className="col-span-1">
           <h1 className="text-white flex flex-col gap-1 text-7xl font-bold md:text-7xl mb-6 text-center md:text-left">
             <span>Camilo</span>

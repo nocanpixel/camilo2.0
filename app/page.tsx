@@ -57,11 +57,11 @@ export default function Home() {
           </div>
           </div>
           <div
-            className="relative bg-gray-100 p-2 pb-10 rounded-md hidden md:block col-start-3"
+            className="relative bg-gray-100 p-2 px-3 pb-14 rounded-md hidden md:block col-start-3 backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-md "
             style={{ minHeight: "50%" }}
           >
             <div className="py-5">
-              <span className="text-gray-800 font-semibold text-2xl pl-2">
+              <span className="text-gray-200 font-semibold text-2xl pl-2">
                 {"#Thoughts •"}
               </span>
             </div>

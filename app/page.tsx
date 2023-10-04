@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           </div>
           <div
-            className="relative bg-gray-100 p-2 rounded-md hidden md:block col-start-3"
+            className="relative bg-gray-100 p-2 pb-10 rounded-md hidden md:block col-start-3"
             style={{ minHeight: "50%" }}
           >
             <div className="py-5">
@@ -72,7 +72,7 @@ export default function Home() {
               </div>
             ))}
             </div>
-            <div className="w-full h-10 mt-10 absolute bottom-0 left-0">
+            <div className="w-full h-10 absolute bottom-0 left-0">
               <div className="flex items-center h-10 justify-center">
                 <span className="text-sm text-gray-400 font-light">
                   {`Camilo Carreño 2023 `}&copy;

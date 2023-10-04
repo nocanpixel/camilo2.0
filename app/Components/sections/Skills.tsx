@@ -14,10 +14,10 @@ export const Skills = () => {
       </h1>
       <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-5 md:grid-rows-6 gap-4 pt-10">
         {skills?.map((skill) => {
-          const truncatedName =
-            skill.name.length > 15
-              ? skill.name.substring(0, 15) + "..."
-              : skill.name;
+          // const truncatedName =
+          //   skill.name.length > 15
+          //     ? skill.name.substring(0, 15) + "..."
+          //     : skill.name;
 
           return (
             <div className={`${skill.class}`} key={skill.id}>
@@ -29,7 +29,7 @@ export const Skills = () => {
               >
                 <StyledCard>
                   <span className="font-semibold text-white text-xl text-center">
-                    {truncatedName}
+                    {skill.name}
                   </span>
                 </StyledCard>
               </Popover>

@@ -11,4 +11,10 @@ export const thoughts = [
         tags: "#Coding4Life",
         time: '10:30',
     },
+    {
+        id:3,
+        text: "JavaScript, the backbone of the digital realm. Its versatility, from async to DOM, powers the web's core.",
+        tags: "#TechPioneer",
+        time: '13:51',
+    },
 ]

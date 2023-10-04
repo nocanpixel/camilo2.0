@@ -16,12 +16,12 @@ export default function Home() {
         <Background />
       </div>
       <div
-        className="absolute left-0 h-screen w-full z-20 bg-black"
+        className="absolute left-0 h-screen w-full z-20 bg-black bg-[radial-gradient(#222222_1px,transparent_1px)] [background-size:16px_16px]"
         style={{ clipPath: "polygon(0 50%, 100% 23%, 100% 100%, 0% 100%)" }}
       ></div>
       <section className="h-screen relative z-30">
-        <div className="absolute w-full h-screen grid md:grid-cols-2 items-center md:items-center md:justify-center md:gap-7">
-          <div>
+        <div className="absolute w-full h-screen grid md:grid-cols-3 items-center md:items-center md:justify-center md:gap-7">
+          <div className="col-span-2">
           <h1 className="text-white flex flex-col gap-1 text-7xl font-bold md:text-7xl mb-6 text-center md:text-left">
             <span>Camilo</span>
             <span>Carreño Beleño</span>
@@ -57,23 +57,23 @@ export default function Home() {
           </div>
           </div>
           <div
-            className="relative bg-gray-100 p-6 rounded-md w-2/2 hidden md:block"
-            style={{ minHeight: "40%" }}
+            className="relative bg-gray-100 p-2 rounded-md hidden md:block col-start-3"
+            style={{ minHeight: "50%" }}
           >
             <div className="py-5">
               <span className="text-gray-800 font-semibold text-2xl pl-2">
                 {"#Thoughts •"}
               </span>
             </div>
-            <div className="overflow-auto h-44 md:h-46">
+            <div className="overflow-auto h-44 md:h-auto">
             {thoughts?.map(item => (
               <div key={item.id} className="py-1" >
                 <TweetCard text={item.text} tags={item.tags} time={item.time} />
               </div>
             ))}
             </div>
-            <div className="w-full h-10 mt-10">
-              <div className=" w-full flex items-center h-10 justify-center">
+            <div className="w-full h-10 mt-10 absolute bottom-0 left-0">
+              <div className="flex items-center h-10 justify-center">
                 <span className="text-sm text-gray-400 font-light">
                   {`Camilo Carreño 2023 `}&copy;
                 </span>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-32">
+      <section className="">
         <Skills />
       </section>
       <section className="py-10">

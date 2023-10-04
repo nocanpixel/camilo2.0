@@ -11,7 +11,7 @@ const Card = (props: Props) => {
 
   return (
     <div>
-      <Link href={props.url} target="_blank" className={`border relative border-gray-600 cursor-pointer p-6 rounded-xl hover:border-gray-500 hover:bg-zinc-900 hover:bg-opacity-60 flex flex-col gap-3 justify-between`} >
+      <Link href={props.url} target="_blank" className={`border relative border-gray-600 cursor-pointer p-6 rounded-xl hover:border-gray-500 hover:bg-zinc-900 hover:bg-opacity-60 flex flex-col gap-3 bg-zinc-600 justify-between backdrop-filter bg-opacity-10 backdrop-blur-sm`} >
       <span className="text-2xl text-white">{props.title}</span>
       <p className="text-sm text-gray-400 mt-2">
         {props.description}

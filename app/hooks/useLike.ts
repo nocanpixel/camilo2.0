@@ -1,6 +1,8 @@
 import {useState} from "react";
+import { useStore } from "./useStore";
 export const useLike = () => {
     const [data, setData] = useState(null);
+    const {fetchData} = useStore();
 
     const fetchPostLike = async () => {
         try {
@@ -11,7 +13,7 @@ export const useLike = () => {
                 },
                 body: JSON.stringify({like:true})
             });
-
+            fetchData();
             if(!response.ok){throw new Error('Network response was not ok');}
             const data = await response.json();
             setData(data)

@@ -10,7 +10,7 @@ export const LikeButton = () => {
 
   const action = () => {
     setState((prev) => !prev);
-    if(data.message.register)return;
+    if(data.message.register){return;}
     fetchPostLike();
   }
 

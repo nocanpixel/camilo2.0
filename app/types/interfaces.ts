@@ -23,3 +23,9 @@ export type Props3D = {
     radio?: number;
     changeColor?: number;
 }
+
+export type PropsLikeButton = {
+    onClick?: ()=>void;
+    state?: boolean;
+    like?: boolean | null;
+}

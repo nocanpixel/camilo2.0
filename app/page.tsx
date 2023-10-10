@@ -4,19 +4,11 @@ import { Instagram, LinkedIn, Mail } from "./Icon/Icons";
 import Link from "next/link";
 import { Skills } from "./Components/sections/Skills";
 import { Background } from "./Components/Background";
-import GradientText from "./Components/GradientText";
 import One from "./Components/sections/One";
 import { TweetCard } from "./Components/TweetCard";
 import { thoughts } from "./utils/thoughts";
-import { LikeButton } from "./Components/LikeButton";
-import { useStore } from "./hooks/useStore";
 
 export default function Home() {
-  const { data, fetchData } = useStore();
-
-  React.useEffect(() => {
-    fetchData();
-  }, []);
   return (
     <main>
       <div className="absolute left-0 h-screen w-full bg-gray-900">
@@ -71,20 +63,6 @@ export default function Home() {
             <div className="py-5">
               <span className="text-gray-200 font-semibold text-2xl pl-2 flex items-center justify-between">
                 <span>{"#Thoughts •"}</span>
-                <div className="flex gap-2">
-                  {data ? (
-                    <span className="flex items-center gap-1">
-                      <LikeButton />
-                      <span className="text-xs font-bold">
-                        {data && data.message.amount}
-                      </span>
-                    </span>
-                  ) : (
-                    <div role="status" className="max-w-sm animate-pulse flex items-center gap-1">
-                      <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-500 w-16"></div>
-                    </div>
-                  )}
-                </div>
               </span>
             </div>
             <div className="overflow-auto h-44 md:h-auto">

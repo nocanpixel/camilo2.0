@@ -28,4 +28,5 @@ export type PropsLikeButton = {
     onClick?: ()=>void;
     state?: boolean;
     like?: boolean | null;
+    disabled?: boolean | null;
 }

@@ -9,7 +9,7 @@ export const useStore = create<AppState>((set) => ({
   data: null,
   fetchData: async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/");
+      const response = await fetch("https://kempsey-tasmanian-devil-kbpk.2.ie-1.fl0.io/api/");
       const data = await response.json();
       set({ data });
     } catch (error) {

@@ -4,7 +4,7 @@ export const useLike = () => {
 
     const fetchPostLike = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/like', {
+            const response = await fetch('https://kempsey-tasmanian-devil-kbpk.2.ie-1.fl0.io/api/like', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

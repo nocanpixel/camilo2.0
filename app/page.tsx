@@ -84,13 +84,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" h-32 absolute bottom-0 md:hidden">
-            <TweetCard
-              text={thoughts[0].text}
-              tags={thoughts[0].tags}
-              time={thoughts[0].time}
-            />
-          </div>
+        </div>
+      </section>
+      <section>
+        <div className="md:hidden">
+          <TweetCard
+            text={thoughts[0].text}
+            tags={thoughts[0].tags}
+            time={thoughts[0].time}
+          />
         </div>
       </section>
       <section className="">

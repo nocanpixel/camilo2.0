@@ -27,7 +27,6 @@ export const Navbar = () => {
                       <span className="text-xs font-bold">
                         {data && data.message.amount}
                       </span>
-                      <span>{data&& data.message.client}</span>
                     </span>
                   ) : (
                     <div role="status" className="max-w-sm animate-pulse flex items-center gap-1">

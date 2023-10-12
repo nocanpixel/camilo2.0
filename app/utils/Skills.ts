@@ -55,7 +55,7 @@ export const skills = [
     },
     {
       id: 7,
-      name: "Styled components",
+      name: "S. components",
       color: "#4D326B",
       text: getTextColor("#4D326B"), // Pink background, black text
       logo: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",

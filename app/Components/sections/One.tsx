@@ -14,18 +14,6 @@ const One = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center pt-8">
-        {/* <span
-          style={{
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundImage:
-              "linear-gradient(90deg, oklch(59.59% 0.24 255.09156059071347), oklch(81.58% 0.189 190.74037768509325))",
-          }}
-        >
-          Projects
-        </span> */}
-      </h1>
       <h2 className="flex flex-col md:flex-row gap-4 items-center justify-center pt-4">
         <span
           className="text-4xl font-bold "

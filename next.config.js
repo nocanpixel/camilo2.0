@@ -5,6 +5,10 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
+                hostname: 'hackaday.com'
+            },
+            {
+                protocol: 'https',
                 hostname: 'cdn.freebiesupply.com'
             },
             {

@@ -7,6 +7,8 @@ import { Background } from "./Components/Background";
 import One from "./Components/sections/One";
 import { TweetCard } from "./Components/TweetCard";
 import { thoughts } from "./utils/thoughts";
+import { Experience } from "./Components/sections/Experience";
+import { NewSection } from "./styles/components/NewSection";
 
 export default function Home() {
   return (
@@ -86,7 +88,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <NewSection>
         <div className="md:hidden">
           <TweetCard
             text={thoughts[0].text}
@@ -94,13 +96,16 @@ export default function Home() {
             time={thoughts[0].time}
           />
         </div>
-      </section>
-      <section className="">
+      </NewSection>
+      <NewSection>
         <Skills />
-      </section>
-      <section className="py-10">
+      </NewSection>
+      <NewSection>
         <One />
-      </section>
+      </NewSection>
+      <NewSection>
+        <Experience />
+      </NewSection>
     </main>
   );
 }

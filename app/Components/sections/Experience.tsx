@@ -43,14 +43,14 @@ export const Experience = () => {
               {"My professional experience"}
             </div>
           </div>
-          <div className="mx-auto p-4 bg-black overflow-y-auto h-64">
+          <div className="mx-auto p-4 bg-black overflow-y-auto h-64 md:pr-52 font-mono text-sm font-extralight">
           <p className="text-green-400">{'$ ./my_professional_experience.sh'}</p>
 
           <p className="text-white my-2">{'Experience:'}</p>
           <ul>
             <li>
-              <span className="text-green-400">{'- [2022 - 2023] :'}</span> Junior
-              {'Developer @ Venturit.'}
+              <span className="text-green-400">{'- [2022 - 2023] :'}</span>
+              <span>{' Frontend Developer @ Venturit.'}</span>
               <ul>
                 <li>
                   <span className="text-white">

@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
       <NewSection>
-        <div className="md:hidden">
+        <div className="md:hidden relative">
           <TweetCard
             text={thoughts[0].text}
             tags={thoughts[0].tags}

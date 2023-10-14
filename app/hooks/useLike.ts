@@ -6,7 +6,7 @@ export const useLike = () => {
 
     const fetchPostLike = async () => {
         try {
-            const response = await fetch('https://kempsey-tasmanian-devil-kbpk.2.ie-1.fl0.io/api/like', {
+            const response = await fetch('https://darwin-wombat-btmd.2.us-1.fl0.io/api/like', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

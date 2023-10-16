@@ -17,7 +17,7 @@ export const Navbar = () => {
             <div className="z-10 flex gap-3 items-center font-semibold">
                 {/* <Logo/> */}
                 {/* <span className="text-orange-600">{'<'}</span> {'Web'} <span className="text-cyan-500">{'/>'}</span>  */}
-                <span className="text-white text-md font-sans font-extrabold text-3xl"> {'Developer'} </span>
+                <span className="text-white text-md font-sans font-extrabold text-3xl"> {'Cambe'} </span>
             </div>
             <div className="z-10">
             <div className="flex gap-2">

@@ -18,11 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5326726221343916"
-        crossOrigin="anonymous"
-      ></script>
       <body suppressHydrationWarning className={inter.className}>
         <Navbar />
         <div className="px-6 lg:px-40" id="margins">

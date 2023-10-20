@@ -16,7 +16,7 @@ export const projects = [
     {
         id:3,
         title: "German articles",
-        url: "https://german-articles.netlify.app/",
+        url: "https://cambe.app/",
         description: "An innovative approach to learning German, where I designed an engaging game tailored for myself and fellow students.",
         technologies: ['React JS', 'CSS']
     },

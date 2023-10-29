@@ -24,7 +24,7 @@ const One = () => {
               "linear-gradient(90deg, oklch(59.59% 0.24 255.09156059071347), oklch(81.58% 0.189 190.74037768509325))",
           }}
         >
-          My recent work
+          {'Recent work'}
         </span>
         <span className="text-lg text-center md:text-start text-gray-400">
           {"Here are a few design projects I've worked on."}

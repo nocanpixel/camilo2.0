@@ -46,11 +46,11 @@ export const skills = [
     },
     {
       id: 6,
-      name: "Vite",
+      name: "Github",
       color: "#F3FA8C",
       text: getTextColor("#F3FA8C"), // Yellow background, black text
-      logo: "https://vitejs.dev/logo-with-shadow.png",
-      experience: "1",
+      logo: "https://cdn.freebiesupply.com/logos/large/2x/github-icon-1-logo-png-transparent.png",
+      experience: "3",
       class: "md:row-span-3 md:col-start-5 md:row-start-4 "
     },
     {
@@ -64,11 +64,11 @@ export const skills = [
     },
     {
       id: 9,
-      name: "GraphQL",
+      name: "Redux",
       color: "#EFB9E4",
       text: getTextColor("#EFB9E4"), // Purple background, white text
-      logo: "https://graphql.org/img/logo.svg",
-      experience: "1",
+      logo: "https://redux.js.org/img/redux.svg",
+      experience: "2",
       class: "md:row-span-3 md:col-start-1 md:row-start-4"
     },
   ];

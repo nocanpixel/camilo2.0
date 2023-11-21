@@ -21,7 +21,7 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'graphql.org'
+                hostname: 'redux.js.org'
             }
         ]
     }

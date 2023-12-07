@@ -62,7 +62,7 @@ export const Popover: React.FC<PropsPopover> = (props) => {
             <span className="text-4xl font-bold">{props.experience}</span>{" "}
             <span className="text-gray-500 ">{`year${
               parseInt(props.experience) > 1 ? "s" : ""
-            } of work experience.`}</span>
+            } of experience.`}</span>
           </span>
         </StyledPopover>
       )}

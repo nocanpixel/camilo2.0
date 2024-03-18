@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Card";
 import { projects } from "@/app/utils/projects";
 import { Project } from "@/app/types/interfaces";
+import GradientText from "../GradientText";
 
 const One = () => {
   const numGroups = 3;
@@ -14,22 +15,14 @@ const One = () => {
 
   return (
     <div>
-      <h2 className="flex flex-col md:flex-row gap-4 items-center justify-center pt-4">
-        <span
-          className="text-4xl font-bold "
-          style={{
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundImage:
-              "linear-gradient(90deg, oklch(59.59% 0.24 255.09156059071347), oklch(81.58% 0.189 190.74037768509325))",
-          }}
-        >
+        <h1 className="text-2xl font-mono text-slate-300">
+          {/* <GradientText
+            className="text-3xl font-nunito font-bold text-center"
+            text="Recent work"
+            colors={["oklch(49.07% 0.272 300.45)", "oklch(64.53% 0.292 2.47)"]}
+          /> */}
           {'Recent work'}
-        </span>
-        <span className="text-lg text-center md:text-start text-gray-400">
-          {"Here are a few design projects I've worked on."}
-        </span>
-      </h2>
+        </h1>
       <div className={`pt-10 grid grid-cols-1 md:grid-cols-3 gap-4`}>
         {groups.map((element, index) => {
           return (

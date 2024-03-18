@@ -13,15 +13,17 @@ export const StyledCard = styled.div<StyledCardProps>`
   }
 
   border-width: 1px;
-  --tw-border-opacity: 1;
+  --tw-border-opacity: 0.5;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 8px;
   align-items: center;
   padding: 7px 0px 7px 0px;
   border-radius: 0.4rem;
   position: relative;
-  background-color: black;
+  background-color: rgb(0,0,0, 0.9);
   cursor: pointer;
   height: 7rem;
 

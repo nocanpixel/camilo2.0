@@ -9,6 +9,7 @@ import { TweetCard } from "./Components/TweetCard";
 import { thoughts } from "./utils/thoughts";
 import { Experience } from "./Components/sections/Experience";
 import { NewSection } from "./styles/components/NewSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,18 +23,30 @@ export default function Home() {
         style={{ clipPath: "polygon(0 50%, 100% 23%, 100% 100%, 0% 100%)" }}
       ></div>
       <section className="h-screen relative z-30">
-        <div className="absolute w-full h-screen grid md:grid-cols-2 items-center md:items-center md:justify-center md:gap-4">
-          <div className="col-span-1">
-            <h1 className="text-white flex flex-col gap-1 text-7xl font-bold md:text-7xl mb-6 text-center md:text-left">
+        <div className="absolute w-full h-screen grid items-center justify-center gap-4">
+          <div className="flex items-center justify-center flex-col">
+            <div style={{ minWidth: '70px' }} className="mb-4">
+              <Image
+                className="object-cover h-32 w-32 rounded-full shadow-md"
+                src={"/images/camilo-perfil.JPG"}
+                width={500}
+                height={500}
+                alt="Picture of the author"
+                priority
+                style={{ objectPosition: 'center -5px'}}
+              />
+            </div>
+            <h1 className="text-white flex flex-col gap-1 text-4xl font-extrabold font-nunito md:text-6xl mb-2 text-center">
               <span>Camilo</span>
               <span>Carreño Beleño</span>
             </h1>
-            <p className="text-center md:text-left mt-3 text-gray-500 text-sm md:text-md">
+            <span className="text-xl md:text-3xl">{"Front-end Web Developer"}</span>
+            <p className="text-center mt-3 text-gray-500 text-sm md:w-1/2">
               {
-                "Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success."
+                "Software engineer and web developer with over 2 years of work experience, and 5+ years of self-taught expertise in web and mobile development. Passionate about building projects, a lover of structures and algorithms."
               }
             </p>
-            <div className="mt-5 flex items-center justify-center md:justify-start gap-3">
+            <div className="mt-5 flex items-center justify-center gap-3">
               <Link
                 href={"https://www.instagram.com/juanca_milo14/?theme=dark"}
                 target="_blank"
@@ -58,53 +71,16 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div
-            className="relative bg-gray-100 p-2 px-3 pb-14 rounded-md hidden md:block backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-md "
-            style={{ minHeight: "50%" }}
-          >
-            <div className="py-5">
-              <span className="text-gray-200 font-semibold text-2xl pl-2 flex items-center justify-between">
-                <span>{"#Thoughts •"}</span>
-              </span>
-            </div>
-            <div className="overflow-auto h-44 md:h-auto">
-              {thoughts?.map((item) => (
-                <div key={item.id} className="py-1">
-                  <TweetCard
-                    text={item.text}
-                    tags={item.tags}
-                    time={item.time}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="w-full h-10 absolute bottom-0 left-0">
-              <div className="flex items-center h-10 justify-center">
-                <span className="text-sm text-gray-400 font-light">
-                  {`Camilo Carreño 2023 `}&copy;
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <NewSection>
-        <div className="md:hidden relative">
-          <TweetCard
-            text={thoughts[0].text}
-            tags={thoughts[0].tags}
-            time={thoughts[0].time}
-          />
-        </div>
+        <Experience />
       </NewSection>
       <NewSection>
         <Skills />
       </NewSection>
       <NewSection>
         <One />
-      </NewSection>
-      <NewSection>
-        <Experience />
       </NewSection>
     </main>
   );

@@ -5,23 +5,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'hackaday.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'cdn.freebiesupply.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'vitejs.dev'
-            },
-            {
-                protocol: 'https',
-                hostname: 'avatars.githubusercontent.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'redux.js.org'
+                hostname: 'svgrepo.com'
             }
         ]
     }

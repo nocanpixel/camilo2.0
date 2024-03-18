@@ -1,11 +1,10 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ReactNode } from "react";
 
-export interface PropsPopover {
+export type PropsPopover = {
   children: ReactNode;
   childProp?: string;
   title?: string;
-  logo: string;
   experience: string;
   id?: number;
 }
@@ -30,3 +29,17 @@ export type PropsLikeButton = {
   like?: boolean | null;
   disabled?: boolean | null;
 };
+
+export type PropsLogos = {
+  color?: string;
+}
+
+  export type Skill = {
+    id: number;
+    name: string;
+    color: string;
+    text: string;
+    logo: React.FC<PropsLogos>; // JSX.Element is the type for React components
+    experience: string;
+    class: string;
+  }

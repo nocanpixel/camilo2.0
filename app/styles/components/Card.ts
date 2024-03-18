@@ -27,7 +27,8 @@ export const StyledCard = styled.div<StyledCardProps>`
   cursor: pointer;
   height: 7rem;
 
-  &:hover {
+  @media (hover: hover) {
+    &:hover {
       /* Custom styles for ::before and ::after on hover */
   &::before {
     content: "";
@@ -77,6 +78,7 @@ export const StyledCard = styled.div<StyledCardProps>`
     100% {
       --rotate: 360deg;
     }
+  }
   }
   }
 `;

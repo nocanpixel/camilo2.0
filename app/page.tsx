@@ -25,15 +25,15 @@ export default function Home() {
       <section className="h-screen relative z-30">
         <div className="absolute w-full h-screen grid items-center justify-center gap-4">
           <div className="flex items-center justify-center flex-col">
-            <div style={{ minWidth: '70px' }} className="mb-4">
+            <div className=" w-36 h-36 rounded-full overflow-hidden bg-gray-700 bg-opacity-20 shadow-md">
               <Image
-                className="object-cover h-32 w-32 rounded-full shadow-md"
-                src={"/images/camilo-perfil.JPG"}
+                className="object-cover w-full h-full"
+                src="/images/camilo-2.png"
                 width={500}
                 height={500}
                 alt="Picture of the author"
                 priority
-                style={{ objectPosition: 'center -5px'}}
+                style={{ objectPosition: 'center -5px', scale:2 }}
               />
             </div>
             <h1 className="text-white flex flex-col gap-1 text-4xl font-extrabold font-nunito md:text-6xl mb-2 text-center">

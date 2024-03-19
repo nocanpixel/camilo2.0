@@ -28,7 +28,7 @@ export const projects = [
         title: "my-beautiful-calendar",
         url: "https://www.npmjs.com/package/my-beautiful-calendar",
         en: {description: "npm calendar - Streamlined date display for your web projects, making date selection effortlessly cool 🗓️😎"},
-        es: {description: "npm calendar - Streamlined date display for your web projects, making date selection effortlessly cool 🗓️😎"},
+        es: {description: "npm calendar: Presenta una visualización simplificada de fechas para tus proyectos web, ¡haciendo que la selección de fechas sea tan fácil y genial! 🗓️😎"},
         technologies: ['vanilla JS','vite']
     },
     

@@ -13,8 +13,14 @@ export type Project = {
   id: number;
   title: string;
   url: string;
-  description: string;
+  en: {
+    description: string;
+  };
+  es: {
+    description: string;
+  };
   technologies: string[];
+  description?: string; // Making description optional
 };
 
 export type Props3D = {
@@ -34,12 +40,12 @@ export type PropsLogos = {
   color?: string;
 }
 
-  export type Skill = {
-    id: number;
-    name: string;
-    color: string;
-    text: string;
-    logo: React.FC<PropsLogos>; // JSX.Element is the type for React components
-    experience: string;
-    class: string;
-  }
+export type Skill = {
+  id: number;
+  name: string;
+  color: string;
+  text: string;
+  logo: React.FC<PropsLogos>; // JSX.Element is the type for React components
+  experience: string;
+  class: string;
+}

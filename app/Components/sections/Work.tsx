@@ -3,11 +3,14 @@ import Card from "../Card";
 import { projects } from "@/app/utils/projects";
 import { Project } from "@/app/types/interfaces";
 import GradientText from "../GradientText";
+import { useLocale, useTranslations } from "next-intl";
 
 const One = () => {
+  const t = useTranslations('Work')
   const numGroups = 3;
   const groups: Project[][] = Array.from({ length: numGroups }, () => []);
-
+  const localActive = useLocale();
+  
   projects.forEach((project, index) => {
     const groupIndex = index % numGroups;
     groups[groupIndex].push(project);
@@ -21,18 +24,18 @@ const One = () => {
             text="Recent work"
             colors={["oklch(49.07% 0.272 300.45)", "oklch(64.53% 0.292 2.47)"]}
           /> */}
-          {'Recent work'}
+          {t('title')}
         </h1>
       <div className={`pt-10 grid grid-cols-1 md:grid-cols-3 gap-4`}>
-        {groups.map((element, index) => {
+        {groups.map((element: {[key:string]:any}, index) => {
           return (
             <div key={index} className="grid gap-4">
-              {element.map((project) => (
+              {element.map((project:any) => (
                 <Card
                   key={project.id}
                   url={project.url}
                   title={project.title}
-                  description={project.description}
+                  description={project[localActive].description}
                   technologies={project.technologies}
                 />
               ))}

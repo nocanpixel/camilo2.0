@@ -5,12 +5,12 @@ export const experience = [
         en: {
             date: "June 2022 - July 2023 · 1 year 1 month",
             rol: "Software Developer",
-            description: "Frontend development for a Hospital Resource Management System (HRMS) project, focusing on user interface design and project structuring. Delivered an intuitive and efficient system."
+            description: "I worked with various frameworks and libraries to develop reusable components and modularize the code, collaborating closely with the backend team."
         },
         es:{
             date: "Junio 2022 - Julio 2023 · 1 año 1 mes",
             rol: "Desarrollador de Software",
-            description: "Desarrollo de frontend para un proyecto de Sistema de Gestión de Recursos Hospitalarios (HRMS), enfocado en el diseño de interfaz de usuario y la estructuración del proyecto. Se entregó un sistema intuitivo y eficiente."
+            description: "Trabajé con varios frameworks y bibliotecas para desarrollar componentes reutilizables y modularizar el código, colaborando estrechamente con el equipo de backend."
         }
     }
 ]

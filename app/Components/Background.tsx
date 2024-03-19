@@ -47,7 +47,7 @@ export const Background = () => {
   };
 
   return (
-    <Canvas shadows camera={{ position: [-0.5, 0, -4.9] }} style={{zIndex:20}} >
+    <Canvas id="hide" shadows camera={{ position: [-0.5, 0, -4.9] }} style={{zIndex:20}} >
       {/* <color attach="background" args={['#000']} /> */}
       {/* <Blob position={[-6, 1, 1]} radio={2}/>
       <Blob position={[0, 6, 10] } radio={2} /> */}

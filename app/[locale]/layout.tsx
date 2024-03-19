@@ -13,26 +13,6 @@ export const metadata: Metadata = {
     "Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success.",
 };
 
-// export default function RootLayout({
-//   children,
-//   params: {locale}
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <html lang="en">
-//       <body suppressHydrationWarning className={inter.className}>
-//         <MyCustomNextIntlClientProvider locale>
-//         <Navbar />
-//         <div className="px-6 lg:px-40" id="margins">
-//           {children}
-//         </div>
-//         </MyCustomNextIntlClientProvider>
-//       </body>
-//     </html>
-//   );
-// }
-
 export default function RootLayout({
   children,
   params: {locale}

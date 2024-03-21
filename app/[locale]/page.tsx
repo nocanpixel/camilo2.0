@@ -42,7 +42,7 @@ export default function Home() {
               <span>Camilo</span>
               <span>Carreño Beleño</span>
             </h1> */}
-            <span className="mb-6 md:w-1/3 w-full">
+            <span className="mb-6 md:w-1/3 w-2/3">
               <HeroName/>
             </span>
             <span id="hide" className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>

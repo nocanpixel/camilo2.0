@@ -26,7 +26,7 @@ export const Skills = () => {
                   <div className="w-8 h-8">
                     <skill.logo color={`${skill.color}`} />
                   </div>
-                  <span className="font-nunito text-white font-thin text-xs text-center">
+                  <span className=" font-fira text-white font-thin text-xs text-center">
                     {skill.name}
                   </span>
                 </StyledCard>

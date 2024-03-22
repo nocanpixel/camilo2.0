@@ -19,7 +19,7 @@ export const Experience = () => {
             {experience.map((ele: { [key: string]: any }) => (
               <li key={ele.id} className="mb-10 ms-4">
                 <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-orange-300 bg-orange-300 "></span>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-600 font-nunito capitalize">
+                <time className="mb-1 text-sm font-normal leading-none text-gray-600 font-fira capitalize">
                   {ele[localActive]?.date}
                 </time>
                 <h3 className="text-lg font-semibold text-white mt-2 capitalize">{ele[localActive]?.rol}</h3>

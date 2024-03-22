@@ -8,7 +8,6 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'nunito': ['Nunito', 'sans-serif'],
       'mono': ['Share Tech Mono', 'monospace'],
       'fira': ['Fira Sans', 'sans-serif']
     },

@@ -1,6 +1,6 @@
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef } from "react";
 import fragmentShader from "../utils/fragmentShader";
 import vertexShader from "../utils/vertexShader";
 import { MathUtils } from "three";
@@ -48,9 +48,6 @@ export const Background = () => {
 
   return (
     <Canvas id="hide" shadows camera={{ position: [-0.5, 0, -4.9] }} style={{zIndex:20}} >
-      {/* <color attach="background" args={['#000']} /> */}
-      {/* <Blob position={[-6, 1, 1]} radio={2}/>
-      <Blob position={[0, 6, 10] } radio={2} /> */}
       <Blob position={[0, 1.4, 0]} radio={0.4} />
       <OrbitControls enableRotate />
     </Canvas>

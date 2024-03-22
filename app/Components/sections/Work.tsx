@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Card";
 import { projects } from "@/app/utils/projects";
 import { Project } from "@/app/types/interfaces";
-import GradientText from "../GradientText";
 import { useLocale, useTranslations } from "next-intl";
 
 const One = () => {

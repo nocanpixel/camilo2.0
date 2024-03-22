@@ -10,11 +10,10 @@ import {
   useInteractions,
 } from "@floating-ui/react";
 import { StyledPopover } from "../styles/components/Popover";
-import Image from "next/image";
 
 export const Popover: React.FC<PropsPopover> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsloading] = useState(true);
+  // const [isLoading, setIsloading] = useState(true);
 
   const { refs, floatingStyles, context } = useFloating({
     open: isOpen,

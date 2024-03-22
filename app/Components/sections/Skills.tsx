@@ -1,8 +1,6 @@
 import { StyledCard } from "@/app/styles/components/Card";
 import { skills } from "@/app/utils/Skills";
-import GradientText from "../GradientText";
 import { Popover } from "../Popover";
-import { LogoJs } from "@/app/Icon/Icons";
 import { useTranslations } from "next-intl";
 
 export const Skills = () => {

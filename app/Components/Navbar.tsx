@@ -1,7 +1,5 @@
 "use client";
-import React, { ChangeEvent, Fragment, useEffect, useState, useTransition } from "react"
-// import { useStore } from "../hooks/useStore";
-// import { LikeButton } from "./LikeButton";
+import React, { Fragment, useState, useTransition } from "react"
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import { useRouter } from "next/navigation";
@@ -48,7 +46,6 @@ export const Navbar = () => {
       </div>
       <div className="z-10 flex gap-3 items-center font-semibold">
         {/* <Logo/> */}
-        {/* <span className="text-orange-600">{'<'}</span> {'Web'} <span className="text-cyan-500">{'/>'}</span>  */}
         <span className="text-white text-md font-sans font-extrabold text-3xl"> {'cambe'} </span>
       </div>
       <div className="z-10">

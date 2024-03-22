@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "../Components/Navbar";
-import MyCustomNextIntlClientProvider from "./MyCustomNextIntlClientProvider.tsx";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +27,7 @@ export default function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
         <Navbar />
         <div className="px-6 lg:px-40" id="margins">
+        <SpeedInsights/>
           {children}
         </div>
         </NextIntlClientProvider>

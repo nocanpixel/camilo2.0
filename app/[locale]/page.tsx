@@ -37,6 +37,7 @@ export default function Home() {
                 priority
                 style={{ objectPosition: 'center -5px', scale:2 }}
               />
+              <Background />
             </div>
             <h1 className="text-white flex flex-col gap-1 text-4xl font-bold font-fira md:text-5xl mb-2 text-center">
               <span>Camilo</span>
@@ -46,7 +47,7 @@ export default function Home() {
               <HeroName/>
             </span> */}
             <span id="hide" className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>
-            <p id="hide" className="text-center mt-3 text-gray-500 text-sm md:w-1/2">
+            <p id="hide" className="text-center mt-3 text-gray-500 text-sm">
               {t('introduction')}
             </p>
             <div id="hide" className="mt-5 flex items-center justify-center gap-3">

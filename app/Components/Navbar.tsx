@@ -65,7 +65,7 @@ export const Navbar = () => {
                       <span className="ml-3 block truncate">{selected.value.toUpperCase()}</span>
                     </span>
                     <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                      <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                      <ChevronUpDownIcon className="h-5 w-5 text-slate-500" aria-hidden="true" />
                     </span>
                   </Listbox.Button>
 

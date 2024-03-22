@@ -38,13 +38,13 @@ export default function Home() {
                 style={{ objectPosition: 'center -5px', scale:2 }}
               />
             </div>
-            {/* <h1 className="text-white flex flex-col gap-1 text-4xl font-extrabold font-nunito md:text-6xl mb-2 text-center">
+            <h1 className="text-white flex flex-col gap-1 text-4xl font-bold font-fira md:text-5xl mb-2 text-center">
               <span>Camilo</span>
               <span>Carreño Beleño</span>
-            </h1> */}
-            <span className="mb-6 md:w-1/3 w-2/3">
+            </h1>
+            {/* <span className="mb-6 md:w-1/3 w-2/3">
               <HeroName/>
-            </span>
+            </span> */}
             <span id="hide" className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>
             <p id="hide" className="text-center mt-3 text-gray-500 text-sm md:w-1/2">
               {t('introduction')}

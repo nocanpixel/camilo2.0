@@ -47,7 +47,7 @@ export const Background = () => {
   };
 
   return (
-    <Canvas id="hide" shadows camera={{ position: [-0.5, 0, -4.9] }} style={{zIndex:20}} >
+    <Canvas shadows camera={{ position: [-0.5, 0, -4.9] }} style={{zIndex:20}} >
       <Blob position={[0, 1.4, 0]} radio={0.4} />
       <OrbitControls enableRotate />
     </Canvas>

@@ -27,7 +27,7 @@ export default function Home() {
       <section className="h-screen relative z-30">
         <div className="absolute w-full h-screen grid items-center justify-center gap-4">
           <div className="flex items-center justify-center flex-col">
-            <div id="hide" className=" w-36 h-36 rounded-full overflow-hidden bg-gray-700 bg-opacity-5 shadow-md mb-10">
+            <div className=" w-36 h-36 rounded-full overflow-hidden bg-gray-700 bg-opacity-5 shadow-md mb-10">
               <Image
                 className="object-cover w-full h-full"
                 src="/images/camilo-2.png"
@@ -46,11 +46,11 @@ export default function Home() {
             {/* <span className="mb-6 md:w-1/3 w-2/3">
               <HeroName/>
             </span> */}
-            <span id="hide" className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>
-            <p id="hide" className="text-center mt-3 text-gray-500 text-sm">
+            <span className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>
+            <p className="text-center mt-3 text-gray-500 text-sm">
               {t('introduction')}
             </p>
-            <div id="hide" className="mt-5 flex items-center justify-center gap-3">
+            <div className="mt-5 flex items-center justify-center gap-3">
               <Link
                 href={"https://www.instagram.com/juanca_milo14/?theme=dark"}
                 target="_blank"

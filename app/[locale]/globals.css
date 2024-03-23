@@ -34,18 +34,3 @@ body {
   background-image: radial-gradient(#222222 1px, transparent 1px);
   background-size: 16px 16px;
 }
-
-#hide {
-  opacity: 0;
-  animation: show 2s ease-in forwards;
-}
-
-@keyframes show {
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}

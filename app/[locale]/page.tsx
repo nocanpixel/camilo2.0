@@ -47,7 +47,7 @@ export default function Home() {
               <HeroName/>
             </span> */}
             <span className="text-xl font-mono md:text-3xl">{`> ${t('title')}`}</span>
-            <p className="text-center mt-3 text-gray-500 text-sm">
+            <p className="text-center mt-3 text-gray-500 text-sm sm:w-8/12 md:w-8/12">
               {t('introduction')}
             </p>
             <div className="mt-5 flex items-center justify-center gap-3">

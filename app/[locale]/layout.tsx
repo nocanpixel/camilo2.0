@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Navbar } from "../Components/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Navbar />
         <div className="px-6 lg:px-40" id="margins">
         <SpeedInsights/>
+        <Analytics/>
           {children}
         </div>
         </NextIntlClientProvider>

@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <main>
       <div className="absolute left-0 h-screen w-full">
+        <span className="w-full h-screen absolute backdrop-blur-xl bg-white/5 z-9"></span>
         <BgVideo/>
       </div>
       <div

@@ -33,7 +33,7 @@ export default function Home() {
               <BgVideo/>
             </div>
             <div
-              className="absolute hidden left-0 h-screen w-full -z-1 bg-black bg-[radial-gradient(#222222_1px,transparent_1px)] [background-size:16px_16px]"
+              className="absolute left-0 h-screen w-full -z-1 bg-black bg-[radial-gradient(#222222_1px,transparent_1px)] [background-size:16px_16px]"
               style={{ clipPath: "polygon(0 50%, 100% 20%, 100% 100%, 0% 100%)" }}
             ></div>
             <section className="h-screen relative z-30">

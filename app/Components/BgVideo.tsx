@@ -18,6 +18,7 @@ export function BgVideo() {
         height: `100vh`,
         objectFit: 'cover',
         zIndex: -1,
+        objectPosition: 'center'
       }}
     />
   );

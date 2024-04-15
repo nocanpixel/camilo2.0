@@ -13,14 +13,16 @@ const Card = (props: Props) => {
 
   return (
     <div className="relative">
-      {props.githubUrl ? (
-          <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center absolute z-10 -right-2 -top-2 bg-black rounded-full ">
-            <GithubIcon url={props.githubUrl}/>
+      {!props.githubUrl ? (
+          <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center absolute z-10 -right-2 -top-2 bg-black rounded-full">
+            <GithubIcon  color="#2d313b"/>
           </div>
       ) : (
-        <div className="w-6 cursor-not-allowed absolute z-10 -right-2 -top-2 bg-black rounded-full">
-          <GithubIcon color="#2d313b" />
-        </div>
+        <Link className="absolute z-10 -right-2 -top-2 bg-black rounded-full " href={props.githubUrl} target="_blank">
+          <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
+            <GithubIcon url={props.githubUrl}/>
+          </div>
+        </Link>
       )}
       <Link href={props.url} target="_blank" className={`border relative border-gray-800 cursor-pointer p-6 rounded-xl hover:border-gray-500 hover:bg-zinc-900 hover:bg-opacity-60 flex flex-col gap-3 bg-zinc-600 justify-between backdrop-filter bg-opacity-10 backdrop-blur-sm`} >
         <div className="flex justify-between">

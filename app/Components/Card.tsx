@@ -13,7 +13,7 @@ const Card = (props: Props) => {
 
   return (
     <div className="relative">
-        <Link className={`absolute z-10 -right-2 -top-2 bg-black rounded-full ${!props.githubUrl&&' pointer-events-none cursor-not-allowed'}`} href={props.githubUrl?props.githubUrl:'#'} target="_blank">
+        <Link className={`absolute z-10 -right-2 -top-2 bg-black rounded-full ${props.githubUrl==="#"&&' pointer-events-none cursor-not-allowed'}`} href={props.githubUrl} target="_blank">
           <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
             <GithubIcon color={props.githubUrl} />
           </div>

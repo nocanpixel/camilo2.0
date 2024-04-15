@@ -30,7 +30,7 @@ export const projects = [
         id:4,
         title: "Restaurant",
         url: "https://nocanpixel.github.io/thirdchallenge",
-        githubUrl:'#',
+        githubUrl:undefined,
         en: {description: "Securing a scholarship through Colnodo's program, sponsored by Google, I took on a leadership role in a team tasked with developing a fully functional website for a restaurant."},
         es: {description: "Asegurando una beca a través del programa de Colnodo, patrocinado por Google, asumí un papel de liderazgo en un equipo encargado de desarrollar un sitio web completamente funcional para un restaurante."},
         technologies: ['React JS','Material UI']

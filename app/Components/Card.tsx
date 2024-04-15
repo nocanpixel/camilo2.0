@@ -5,6 +5,7 @@ interface Props {
   title?: string;
   description?: string;
   url: string;
+  github: boolean;
   githubUrl: string;
   technologies?: string[];
 }
@@ -13,14 +14,16 @@ const Card = (props: Props) => {
 
   return (
     <div className="relative">
-      {!props.githubUrl ? (
-          <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center absolute z-10 -right-2 -top-2 bg-black rounded-full">
-            <GithubIcon  color="#2d313b"/>
-          </div>
-      ) : (
+      {props.github === true ? (
         <Link className="absolute z-10 -right-2 -top-2 bg-black rounded-full " href={props.githubUrl} target="_blank">
           <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
-            <GithubIcon url={props.githubUrl}/>
+            <GithubIcon />
+          </div>
+        </Link>
+      ) : (
+        <Link className="absolute z-10 -right-2 -top-2 bg-black rounded-full " href={props.githubUrl} target="_blank">
+          <div className="w-6 cursor-not-allowed absolute z-10 -right-2 -top-2">
+            <GithubIcon color="#2d313b" />
           </div>
         </Link>
       )}

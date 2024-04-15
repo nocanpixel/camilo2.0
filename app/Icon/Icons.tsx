@@ -353,7 +353,6 @@ export const HeroName = () => {
 
 
 export const GithubIcon: React.FC<PropsLogos> = ({color}) => {
-  console.log(color)
   return (
     <svg className={`transition ease-in delay-100 ${!color?'hover:fill-white':''}  fill-slate-400 `} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill={color?color:undefined}>
       <path

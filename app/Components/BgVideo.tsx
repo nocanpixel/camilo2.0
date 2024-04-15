@@ -8,7 +8,8 @@ export function BgVideo() {
       src='/images/eye.gif'
       draggable="false"
       alt='Bg'
-      priority={true}
+      priority
+      placeholder='blur'
       width={500}
       height={500}
       style={{

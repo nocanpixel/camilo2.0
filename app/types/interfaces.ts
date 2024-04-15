@@ -13,8 +13,7 @@ export type Project = {
   id: number;
   title: string;
   url: string;
-  github: boolean;
-  githubUrl: string;
+  githubUrl?: string;
   en: {
     description: string;
   };

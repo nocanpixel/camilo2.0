@@ -23,10 +23,10 @@ export const Experience = () => {
                   {ele[localActive]?.date}
                 </time>
                 <h3 className="text-lg font-semibold text-white mt-2 capitalize">{ele[localActive]?.rol}</h3>
-                <div className="flex gap-2 my-2">
+                <div className="flex gap-2 my-2 overflow-hidden">
                   <Image
-                    className="object-cover h-6 w-6 shadow-md"
-                    src={"/images/venturit_inc__logo.png"}
+                    className="object-cover h-6 w-6 shadow-md rounded-md"
+                    src={ele.image}
                     width={100}
                     height={100}
                     alt="Venturit"

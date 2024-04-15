@@ -2,6 +2,7 @@ export const experience = [
     {
         id:1,
         company: "ReDI School of Digital Integration Malmö",
+        image: "/images/redi.png",
         en: {
             date: "April 2023 - August 2023 · 5 months",
             rol: "",
@@ -16,6 +17,7 @@ export const experience = [
     {
         id:2,
         company: "Venturit",
+        image: "/images/venturit_inc__logo.png",
         en: {
             date: "June 2022 - July 2023 · 1 year 1 month",
             rol: "Software Developer",
@@ -30,6 +32,7 @@ export const experience = [
     {
         id:3,
         company: "Ecoyuma",
+        image: "/images/favicon.ico",
         en: {
             date: "2020 - 2022 · 2 years",
             rol: "Full Stack engineer",
@@ -44,6 +47,7 @@ export const experience = [
     {
         id:4,
         company: "Freelance - Self employed",
+        image: "/images/favicon.ico",
         en: {
             date: "2019 - 2021 · 2 years",
             rol: "Full Stack developer",

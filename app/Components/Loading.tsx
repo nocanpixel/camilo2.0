@@ -10,6 +10,7 @@ export const Loading = () => {
         width={300}
         height={300}
         alt='Loading'
+        priority={true}
         />
         <span className="text-white font-sans font-extrabold text-3xl animate-pulse"> {'We load...'} </span>
         </div>

@@ -12,8 +12,6 @@ interface Props {
 
 const Card = (props: Props) => {
 
-  console.log(props.githubUrl)
-
   return (
     <div className="relative">
       {props.github === true ? (

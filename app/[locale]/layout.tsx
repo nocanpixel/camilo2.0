@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success.",
 };
 
+
 export default function RootLayout({
   children,
   params: {locale}
@@ -22,6 +23,7 @@ export default function RootLayout({
   params: {locale: string};
 }) {
   const messages = useMessages();
+
   return (
     <html lang={locale}>
       <body suppressHydrationWarning className={inter.className}>

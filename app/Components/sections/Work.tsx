@@ -13,7 +13,6 @@ const One = () => {
   projects.forEach((project, index) => {
     const groupIndex = index % numGroups;
     groups[groupIndex].push(project);
-    console.log(groups)
   });
 
   return (

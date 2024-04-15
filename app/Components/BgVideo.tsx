@@ -9,11 +9,13 @@ export function BgVideo() {
       draggable="false"
       alt='Bg'
       priority={true}
+      width={500}
+      height={500}
       style={{
         position: 'absolute',
         left: 0,
         width: '100%',
-        height: `100vh`, // Set the height based on the calculated value
+        height: `100vh`,
         objectFit: 'cover',
         zIndex: -1,
       }}

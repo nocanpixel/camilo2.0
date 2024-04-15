@@ -15,11 +15,9 @@ const Card = (props: Props) => {
   return (
     <div className="relative">
       {props.github === true ? (
-        <Link className="absolute z-10 -right-2 -top-2 bg-black rounded-full " href={props.githubUrl} target="_blank">
-          <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
-            <GithubIcon color="#2d313b" />
-          </div>
-        </Link>
+        <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
+          <GithubIcon color="#2d313b" />
+        </div>
       ) : (
         <div className="w-6 cursor-not-allowed absolute z-10 -right-2 -top-2 bg-black rounded-full">
           <GithubIcon color="#2d313b" />

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Camilo portfolio",
   description:
     "Experienced developer with a passion for solving complex problems through elegant code. Proficient in multiple languages, frameworks, and tools. Committed to delivering quality and innovative solutions for business success.",
+  openGraph: {
+    images: 'https://portfolio.cambe.app/_next/image?url=%2Fimages%2Feye.gif&w=1080&q=75',
+  }
 };
 
 

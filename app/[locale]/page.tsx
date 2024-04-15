@@ -17,7 +17,12 @@ export default function Home() {
   const [pageLoading, setPageLoading] = useState(true);
 
   useEffect(()=>{
+    const handleLoad = () => {
+      console.log('loaded');
+  };
+  window.addEventListener('load', handleLoad);
     const timer = setTimeout(()=>{
+      window.removeEventListener('load', handleLoad);
       setPageLoading(false);
     },2000)
 

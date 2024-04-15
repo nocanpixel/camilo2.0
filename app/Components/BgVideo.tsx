@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 export function BgVideo() {
 
   return (
-    <video
-      autoPlay
-      muted
+    <img
+      src='/images/eye.gif'
+      draggable="false"
       style={{
         position: 'absolute',
         left: 0,
@@ -15,8 +15,8 @@ export function BgVideo() {
         zIndex: -1,
       }}
     >
-      <source src="/vector.mp4" type="video/mp4" />
+      {/* <source src="/vector.mp4" type="video/mp4" /> */}
       {/* Add fallback for browsers that don't support video */}
-    </video>
+    </img>
   );
 }

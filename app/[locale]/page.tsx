@@ -36,7 +36,7 @@ export default function Home() {
                 height={500}
                 alt="Picture of the author"
                 priority
-                style={{ objectPosition:'center', scale:3 }}
+                style={{ objectPosition:'center', scale:2.5 }}
               />
             </div>
             <h1 className="text-white flex flex-col gap-1 text-4xl font-bold font-fira md:text-5xl mb-2 text-center">

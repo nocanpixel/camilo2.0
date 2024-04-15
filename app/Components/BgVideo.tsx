@@ -9,7 +9,6 @@ export function BgVideo() {
       draggable="false"
       alt='Bg'
       priority
-      placeholder='blur'
       width={500}
       height={500}
       style={{

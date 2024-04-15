@@ -11,8 +11,6 @@ interface Props {
 
 const Card = (props: Props) => {
 
-  console.log(props)
-
   return (
     <div className="relative">
         <Link className={`absolute z-10 -right-2 -top-2 bg-black rounded-full ${!props.githubUrl&&' pointer-events-none cursor-not-allowed'}`} href={props.githubUrl?props.githubUrl:'#'} target="_blank">

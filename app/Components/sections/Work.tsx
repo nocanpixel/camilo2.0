@@ -33,6 +33,8 @@ const One = () => {
                 <Card
                   key={project.id}
                   url={project.url}
+                  github={project.github}
+                  githubUrl={project.githubUrl}
                   title={project.title}
                   description={project[localActive].description}
                   technologies={project.technologies}

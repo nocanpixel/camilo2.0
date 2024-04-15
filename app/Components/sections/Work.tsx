@@ -13,6 +13,7 @@ const One = () => {
   projects.forEach((project, index) => {
     const groupIndex = index % numGroups;
     groups[groupIndex].push(project);
+    console.log(groups)
   });
 
   return (
@@ -25,10 +26,10 @@ const One = () => {
           /> */}
           {t('title')}
         </h1>
-      <div className={`pt-10 grid grid-cols-1 md:grid-cols-3 gap-4`}>
+      <div className={`pt-10 grid grid-flow-row md:grid-cols-3 gap-4`}>
         {groups.map((element: {[key:string]:any}, index) => {
           return (
-            <div key={index} className="grid gap-4">
+            <div key={index} className="flex flex-col gap-4">
               {element.map((project:any) => (
                 <Card
                   key={project.id}

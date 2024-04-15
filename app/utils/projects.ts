@@ -7,7 +7,7 @@ export const projects = [
         githubUrl:"https://github.com/nocanpixel/Artikel",
         en: {description: "An innovative approach to learning German, where I designed an engaging game tailored for myself and fellow students."},
         es: {description: "Un enfoque innovador para aprender alemán, donde diseñé un juego atractivo adaptado para mí y mis compañeros de clase."},
-        technologies: ['React JS', 'CSS3','Tailwind']
+        technologies: ['React', 'CSS3','Tailwind']
     },
     {
         id:2,
@@ -31,6 +31,16 @@ export const projects = [
     },
     {
         id:4,
+        title: "Restaurant",
+        url: "https://nocanpixel.github.io/thirdchallenge",
+        github: false,
+        githubUrl:"",
+        en: {description: "Securing a scholarship through Colnodo's program, sponsored by Google, I took on a leadership role in a team tasked with developing a fully functional website for a restaurant."},
+        es: {description: "Asegurando una beca a través del programa de Colnodo, patrocinado por Google, asumí un papel de liderazgo en un equipo encargado de desarrollar un sitio web completamente funcional para un restaurante."},
+        technologies: ['React JS','Material UI']
+    },
+    {
+        id:5,
         title: "Restaurant",
         url: "https://nocanpixel.github.io/thirdchallenge",
         github: false,

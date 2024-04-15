@@ -6,7 +6,7 @@ export const experience = [
         en: {
             date: "April 2023 - August 2023 · 5 months",
             rol: "",
-            description: " Teaching a web development to a class of 20 students in my second language, English."
+            description: "Teaching a web development to a class of 20 students in my second language, English."
         },
         es: {
             date: "",
@@ -21,7 +21,7 @@ export const experience = [
         en: {
             date: "June 2022 - July 2023 · 1 year 1 month",
             rol: "Software Developer",
-            description: "I worked with various frameworks and libraries to develop reusable components and modularize the code, collaborating closely with the backend team."
+            description: "Worked with various frameworks and libraries to develop reusable components and modularize the code, collaborating closely with the backend team."
         },
         es:{
             date: "Junio 2022 - Julio 2023 · 1 año 1 mes",

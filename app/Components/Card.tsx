@@ -14,10 +14,10 @@ const Card = (props: Props) => {
 
   return (
     <div className="relative">
-      {props.github ? (
+      {props.github === true ? (
         <Link className="absolute z-10 -right-2 -top-2 bg-black rounded-full " href={props.githubUrl} target="_blank">
           <div className="w-6 transition ease-in delay-100 hover:scale-125 flex justify-center items-center">
-            <GithubIcon color="white" />
+            <GithubIcon />
           </div>
         </Link>
       ) : (
@@ -35,8 +35,8 @@ const Card = (props: Props) => {
           {props.description}
         </p>
 
-        <div className={`font-light flex ${props.technologies && props.technologies?.length >= 3 ? " flex-col " : " flex-row xl:flex-row "} gap-2`}>
-          <div className="flex flex-row gap-2">
+        <div className={`font-light flex gap-2`}>
+          <div className="flex flex-auto flex-wrap gap-2">
             {props.technologies?.map((technology, index) => (
               <span key={index} className={`py-1 px-4 rounded-md font-mono text-xs ring-1  ring-gray-700 `}>{technology}</span>
             ))}

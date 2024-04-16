@@ -6,7 +6,7 @@ export const experience = [
         en: {
             date: "April 2023 - August 2023 · 5 months",
             rol: "",
-            description: "Teaching a web development to a class of 20 students in my second language, English."
+            description: "Teaching web development to a class of 20 students in my second language, English."
         },
         es: {
             date: "",

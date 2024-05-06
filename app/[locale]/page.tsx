@@ -1,16 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { HeroName, Instagram, LinkedIn, Mail } from "../Icon/Icons";
+import React from "react";
+import { Instagram, LinkedIn, Mail } from "../Icon/Icons";
 import Link from "next/link";
 import { Skills } from "../Components/sections/Skills";
-import { Background } from "../Components/Background";
 import Work from "../Components/sections/Work";
 import { Experience } from "../Components/sections/Experience";
 import { NewSection } from "../styles/components/NewSection";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { BgVideo } from "../Components/BgVideo";
-import { Loading } from "../Components/Loading";
 
 export default function Home() {
   const t = useTranslations('Index');

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
 
 export function BgVideo() {
 
@@ -23,5 +22,3 @@ export function BgVideo() {
     />
   );
 }
-{/* <source src="/vector.mp4" type="video/mp4" /> */}
-{/* Add fallback for browsers that don't support video */}

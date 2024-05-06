@@ -34,6 +34,15 @@ export const projects = [
         en: {description: "Securing a scholarship through Colnodo's program, sponsored by Google, I took on a leadership role in a team tasked with developing a fully functional website for a restaurant."},
         es: {description: "Asegurando una beca a través del programa de Colnodo, patrocinado por Google, asumí un papel de liderazgo en un equipo encargado de desarrollar un sitio web completamente funcional para un restaurante."},
         technologies: ['React JS','Material UI']
+    },
+    {
+        id:5,
+        title: "Chat App",
+        url: "https://lotshat.com",
+        githubUrl:undefined,
+        en: {description: "Built an impressive chat app using real-time messaging and secure authentication."},
+        es: {description: "Desarrollé una impresionante aplicación de chat utilizando mensajería en tiempo real y autenticación segura."},
+        technologies: ['React JS', 'Tailwind', 'CSS', 'StyledComponents','Nodejs','Express','Express session','Passport JS', 'Socket IO', 'AJV', 'Dockers','Compose','MYSQL','Sequelize']
     }
     
 ]

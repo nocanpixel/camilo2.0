@@ -13,7 +13,6 @@ import { StyledPopover } from "../styles/components/Popover";
 
 export const Popover: React.FC<PropsPopover> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isLoading, setIsloading] = useState(true);
 
   const { refs, floatingStyles, context } = useFloating({
     open: isOpen,
